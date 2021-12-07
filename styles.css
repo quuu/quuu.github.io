@@ -95,7 +95,7 @@ body {
   }
 }
 /* Media queries in css */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .container {
     flex-direction: column;
     display: flex;
@@ -105,7 +105,7 @@ body {
     height: 100%;
   }
 }
-@media (min-width: 801px) {
+@media (min-width: 1001px) {
   .container {
     flex-direction: row;
     display: flex;
