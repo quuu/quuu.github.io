@@ -1,12 +1,139 @@
-html, body{
-  margin:0;
+html,
+body {
+  margin: 0;
   height: 100%;
   overflow: hidden;
+  font-family: "Avenir";
+}
+@font-face {
+  font-family: "Avenir";
+  src: url("./avenir-roman.otf") format("truetype");
+}
+.profile-picture {
+  height: 200px;
+  width: auto;
+}
+.body-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  white-space: nowrap;
 }
 
-.absolute-centered{
-
-  padding-top: 30%;
-
+.name {
+  font-size: 48px;
+  margin-bottom: 16px;
 }
 
+.sub-text {
+  font-size: 24px;
+}
+
+.link-list {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 2px;
+}
+
+.fade-in-image {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+  -ms-animation: fadeIn 3s;
+}
+.invert {
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 8px 10px 0px 10px;
+  border-radius: 4px;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Media queries in css */
+@media (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+@media (min-width: 1001px) {
+  .container {
+    flex-direction: row;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+.item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 16px;
+  padding: 8px;
+  transition: 0.3s;
+}
+
+.link-list :hover {
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+
+  color: inherit;
+}
