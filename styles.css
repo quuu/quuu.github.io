@@ -10,7 +10,7 @@ body {
   src: url("./avenir-roman.otf") format("truetype");
 }
 .profile-picture {
-  height: 300px;
+  height: 15em;
   width: auto;
 }
 .body-text {
@@ -21,19 +21,19 @@ body {
 }
 
 .name {
-  font-size: 72px;
+  font-size: 4em;
   margin-bottom: 16px;
 }
 
 .sub-text {
-  font-size: 36px;
+  font-size: 3em;
 }
 
 .link-list {
   display: flex;
   flex-direction: column;
   text-align: left;
-  gap: 2px;
+  gap: 4px;
 }
 
 .fade-in-image {
@@ -118,8 +118,8 @@ body {
 .item {
   display: flex;
   gap: 8px;
-  font-size: 24px;
-  padding: 8px;
+  font-size: 2em;
+  padding: 12px 4px 4px 12px;
   transition: 0.3s;
 }
 
