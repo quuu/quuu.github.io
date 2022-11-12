@@ -1,7 +1,7 @@
 .square {
 
     border-radius: 48px;
-    background: #ffffff;
+    background: linear-gradient(145deg, #FFFFFF, #BBBDC0);
     height: 400px;
     width: 400px;
     animation-name: trans;
@@ -11,20 +11,20 @@
     animation-duration: 4s;
 
     box-shadow: 42px 42px 100px #666666,
-    -42px -42px 100px #ffffff;
+        -42px -42px 100px #ffffff;
 }
 
-.square:nth-of-type(1){
+.square:nth-of-type(1) {
     animation-delay: 1s;
 
 }
 
-.square:nth-of-type(2){
+.square:nth-of-type(2) {
     animation-delay: 2s;
 
 }
 
-.square:nth-of-type(3){
+.square:nth-of-type(3) {
     animation-delay: 3s;
 
 }
@@ -62,7 +62,7 @@
         box-shadow: 42px 42px 100px #666666,
             -42px -42px 100px #ffffff;
     }
-    
+
 }
 
 body {
