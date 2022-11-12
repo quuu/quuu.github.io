@@ -1,0 +1,78 @@
+.square {
+
+    border-radius: 48px;
+    background: #ffffff;
+    height: 400px;
+    width: 400px;
+    animation-name: trans;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: forward;
+    animation-duration: 4s;
+
+    box-shadow: 42px 42px 100px #666666,
+    -42px -42px 100px #ffffff;
+}
+
+.square:nth-of-type(1){
+    animation-delay: 1s;
+
+}
+
+.square:nth-of-type(2){
+    animation-delay: 2s;
+
+}
+
+.square:nth-of-type(3){
+    animation-delay: 3s;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 80px;
+}
+
+@keyframes trans {
+    0% {
+        box-shadow: 42px 42px 100px #666666,
+            -42px -42px 100px #ffffff;
+    }
+
+    25% {
+        box-shadow: -42px 42px 100px #666666,
+            42px -42px 100px #ffffff;
+    }
+
+    50% {
+        box-shadow: -42px -42px 100px #666666,
+            42px 42px 100px #ffffff;
+    }
+
+    75% {
+        box-shadow: 42px -42px 100px #666666,
+            -42px 42px 100px #ffffff;
+    }
+
+    100% {
+
+        box-shadow: 42px 42px 100px #666666,
+            -42px -42px 100px #ffffff;
+    }
+    
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0px;
+    overflow: hidden;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
