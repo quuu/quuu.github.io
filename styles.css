@@ -109,7 +109,7 @@ body {
   .container {
     flex-direction: row;
     display: flex;
-    gap: 100px;
+    gap: 120px;
     justify-content: center;
     align-items: center;
     height: 100%;
